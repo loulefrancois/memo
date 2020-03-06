@@ -103,7 +103,7 @@
     <!-- wwwwwwwwwwwwww CONTENU wwwwwwwwwwww -->
 
     <div id="actualiser"></div>
-    
+
     <div class="container">
 
         <div class="couv">
@@ -114,10 +114,12 @@
         </div>
 
         <div class="couv">
-            <img src="image/couv_2.jpg" alt="" />
-            <p class="titrememoire">L'imitation de vitesse</p>
-            <p class="nomecole"> GUIMIER Benoît<br>isdat, 2020 </p>
-            <div class="auhover"></div>
+            <a href="pdfmemoire.html">
+                <img src="image/couv_2.jpg" alt="" />
+                <p class="titrememoire">L'imitation de vitesse</p>
+                <p class="nomecole"> GUIMIER Benoît<br>isdat, 2020 </p>
+                <div class="auhover"></div>
+            </a>
         </div>
 
         <div class="couv">
@@ -231,7 +233,6 @@
             $(el).appendTo($(el).parent());
         });
     });
-
 </script>
 
 <!-- STICKY MENU : -->
@@ -251,7 +252,6 @@
             navbar.classList.remove("sticky");
         }
     }
-
 </script>
 
 <!-- SCRIPT DESCENTE APRÈS INTRO : -->
@@ -267,7 +267,6 @@
             return false;
         });
     });
-
 </script>
 
 <!-- SCRIPT + : -->
@@ -280,15 +279,12 @@
     function closeNav() {
         document.getElementById("myNav").style.height = "0%";
     }
-
 </script>
 
 <script>
-    
     $('h1').click(function() {
-        javascript:location.reload();
+        javascript: location.reload();
     });
-
 </script>
 
 <!-- SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT -->
