@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<meta charset="utf-8" />
+
+
+<head>
+
+    <!-- Ce qui est écris sur l'onglet : -->
+    <title>Memo!</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/stylememoire.css" />
+    <!-- Touche pas -->
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+
+    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+    <!-- wwwwwwwwwwwwwwww MENU wwwwwwwwwwwwww -->
+
+    <div id="navbar">
+
+        <h1><a href="index.html#actualiser">Memo!</a></h1>
+
+        <span onclick="openNav()">
+            <h2>+</h2>
+        </span>
+
+    </div>
+
+    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+    <!-- wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww -->
+
+    <div id="myNav" class="navbtn">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <h2 class="croix">+</h2>
+        </a>
+
+        <div class="sidnavmenu">
+
+            <div class="blocliste1">
+                <p class="listesidnav">À propos</p>
+                <p class="apparitionhover1">Ce site a pour but la diffusion des mémoires de DNSEP design graphique. Ils vous est possible de le partager en utilisant le formulaire de contact.</p>
+            </div>
+
+            <div class="blocliste2">
+                <p class="listesidnav">Droits d'auteurs</p>
+                <p class="apparitionhover2">Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.</p>
+            </div>
+
+            <div class="blocliste3">
+                <p class="listesidnav">Soumettre un mémoire</p>
+                <p class="apparitionhover3">En cliquant sur soumettre un mémoire vous téléchargerez un gabarit InDesign, un pdf explicatif et vous ouvrirez un formulaire de contact pour nous transmettre votre travail.</p>
+            </div>
+
+            <div class="blocliste4">
+                <p class="listesidnav">Contact</p>
+                <p class="apparitionhover4">Nous sommes disponible pour répondre à toutes vos questions !</p>
+            </div>
+
+            <div class="blocliste5">
+                <p class="listesidnav">Mention légales</p>
+                <p class="apparitionhover5">
+                    Fonts :<br>
+                    Akzidenz Grotesk<br>
+                    <span class="Messapia">Messapia</span> <br>
+                    <span class="Pilowlava">Pilowlava</span> Anton Moglia/Jérémy Landes, Velvetyne Type Foundry<br>
+                    Web Design : Pauline Duret/Lou Lefrançois <br>
+                    Développement : Pauline Duret/Lou Lefrançois</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+    <!-- wwwwwwwwwwwwww CONTENU wwwwwwwwwwww -->
+
+    <div class="container">
+
+        <div class="info">
+            
+            <div class="titre">
+                <p>L'imitation de vitesse,</p>
+                <p>Benoit Guimier</p>
+            </div>
+
+            <div class="contact">
+
+                <p><a href="http://benoitguimier.fr" target="_blank">benoitguimier.fr</a></p>
+                <p>benoitguimier@gmail.com</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="pdf">
+            <iframe src="pdf/lefrancois_lou_4DG.pdf?startpage=1&allowFullscreen=true#toolbar=0"></iframe>
+        </div>
+
+
+    </div>
+
+</body>
+
+<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+<!-- wwwwwwwwwwwwwww SCRIPT wwwwwwwwwwwww -->
+
+<!-- SCRIPT + : -->
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+    
+</html>
+
+

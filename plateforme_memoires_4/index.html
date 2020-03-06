@@ -29,7 +29,7 @@
 
     <div id="intro">
 
-        <p><span class="Pilowlava">Memo!</span> est la plateforme de diffusion des <span class="couleur">mémoires de DNSEP</span> <span class="AkzidenzGrotesk">design graphique</span> en France. Blabla bla bla... <span class="AkzidenzGrotesk">Respect du travail</span> ddes étudients et des droits d'auteurs.</p>
+        <p><span class="Pilowlava">Memo!</span> est la plateforme de diffusion des <span class="couleur">mémoires de DNSEP</span> <span class="MessapiaBold">design graphique</span> en France. Blabla bla bla... <span class="MessapiaBold">Respect du travail</span> des étudients et des droits d'auteurs.</p>
         <p><span class="couleur">Bonne lecture</span> sur <span class="Pilowlava">Memo!</span></p>
 
         <a class="js-scrollTo" href="#navbar">
@@ -45,7 +45,7 @@
 
     <div id="navbar">
 
-        <h1>Memo!</h1>
+        <h1><a href="#actualiser">Memo!</a></h1>
 
         <span onclick="openNav()">
             <h2>+</h2>
@@ -64,35 +64,35 @@
 
         <div class="sidnavmenu">
 
-            <div class="blocliste">
+            <div class="blocliste1">
                 <p class="listesidnav">À propos</p>
-                <p class="apparitionhover">Ce site a pour but la diffusion des mémoires de DNSEP design graphique. Ils vous est possible de le partager en utilisant le formulaire de contact.</p>
+                <p class="apparitionhover1">Ce site a pour but la diffusion des mémoires de DNSEP design graphique. Ils vous est possible de le partager en utilisant le formulaire de contact.</p>
             </div>
 
-            <div class="blocliste">
+            <div class="blocliste2">
                 <p class="listesidnav">Droits d'auteurs</p>
-                <p class="apparitionhover">Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.</p>
+                <p class="apparitionhover2">Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.</p>
             </div>
 
-            <div class="blocliste">
+            <div class="blocliste3">
                 <p class="listesidnav">Soumettre un mémoire</p>
-                <p class="apparitionhover">En cliquant sur soumettre un mémoire vous téléchargerez un gabarit InDesign, un pdf explicatif et vous ouvrirez un formulaire de contact pour nous transmettre votre travail.</p>
+                <p class="apparitionhover3">En cliquant sur soumettre un mémoire vous téléchargerez un gabarit InDesign, un pdf explicatif et vous ouvrirez un formulaire de contact pour nous transmettre votre travail.</p>
             </div>
 
-            <div class="blocliste">
+            <div class="blocliste4">
                 <p class="listesidnav">Contact</p>
-                <p class="apparitionhover">Nous sommes disponible pour répondre à toutes vos questions !</p>
+                <p class="apparitionhover4">Nous sommes disponible pour répondre à toutes vos questions !</p>
             </div>
 
-            <div class="blocliste">
+            <div class="blocliste5">
                 <p class="listesidnav">Mention légales</p>
-                <p class="apparitionhover">
-                Fonts :<br>
+                <p class="apparitionhover5">
+                    Fonts :<br>
                     Akzidenz Grotesk<br>
                     <span class="Messapia">Messapia</span> <br>
                     <span class="Pilowlava">Pilowlava</span> Anton Moglia/Jérémy Landes, Velvetyne Type Foundry<br>
-                Web Design : Pauline Duret/Lou Lefrançois <br>
-                Développement : Pauline Duret/Lou Lefrançois</p>
+                    Web Design : Pauline Duret/Lou Lefrançois <br>
+                    Développement : Pauline Duret/Lou Lefrançois</p>
             </div>
 
         </div>
@@ -102,6 +102,8 @@
     <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
     <!-- wwwwwwwwwwwwww CONTENU wwwwwwwwwwww -->
 
+    <div id="actualiser"></div>
+    
     <div class="container">
 
         <div class="couv">
@@ -229,6 +231,7 @@
             $(el).appendTo($(el).parent());
         });
     });
+
 </script>
 
 <!-- STICKY MENU : -->
@@ -248,6 +251,7 @@
             navbar.classList.remove("sticky");
         }
     }
+
 </script>
 
 <!-- SCRIPT DESCENTE APRÈS INTRO : -->
@@ -263,6 +267,7 @@
             return false;
         });
     });
+
 </script>
 
 <!-- SCRIPT + : -->
@@ -275,6 +280,15 @@
     function closeNav() {
         document.getElementById("myNav").style.height = "0%";
     }
+
+</script>
+
+<script>
+    
+    $('h1').click(function() {
+        javascript:location.reload();
+    });
+
 </script>
 
 <!-- SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT -->

@@ -23,6 +23,11 @@ body {
 }
 
 @font-face {
+    font-family: 'Messapia-Bold';
+    src: url("../font/Messapia-Bold.otf");
+}
+
+@font-face {
     font-family: 'Pilowlava-Regular';
     src: url("../font/Pilowlava-Regular.otf");
 }
@@ -46,6 +51,11 @@ body {
 
 .Pilowlava {
     font-family: 'Pilowlava-Regular', sans-serif;
+}
+
+.MessapiaBold {
+    font-family: 'Messapia-Bold';
+    font-size: 0.9em;
 }
 
 .AkzidenzGrotesk {
@@ -82,6 +92,11 @@ h1 {
     z-index: 1000;
 }
 
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
 /* + */
 
 h2 {
@@ -116,9 +131,9 @@ h2:hover {
     top: 0;
     padding: 0.6em;
     padding-top: 0.3em;
+    padding-right: 1em;
     height: 4em;
 }
-
 
 /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
 /* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
@@ -149,6 +164,7 @@ h2:hover {
 .navbtn .closebtn h2.croix {
     position: absolute;
     float: right;
+    top: 0.1em;
     right: 0.35em;
     overflow-y: hidden;
 }
@@ -180,28 +196,65 @@ h2.croix:hover {
     font-family: 'Messapia-Regular';
     line-height: 1.7em;
     font-size: 3.5em;
-    list-style: none;
 }
 
-.apparitionhover {
-    font-family: 'AkzidenzGrotesk-Medium';
+.apparitionhover1,
+.apparitionhover2,
+.apparitionhover3,
+.apparitionhover4,
+.apparitionhover5 {
+    font-family: 'Messapia-Bold';
     font-size: 1.2em;
     line-height: 1.6em;
     display: none;
     position: absolute;
     left: 5em;
-    top: 10em;
-    width: 25%;
+    width: 30%;
 }
 
-.blocliste {
+.blocliste1,
+.blocliste2,
+.blocliste3,
+.blocliste4,
+.blocliste5 {
     height: 3em;
 }
 
-.blocliste:hover .apparitionhover {
+.blocliste1:hover .apparitionhover1,
+.blocliste2:hover .apparitionhover2,
+.blocliste3:hover .apparitionhover3,
+.blocliste4:hover .apparitionhover4,
+.blocliste5:hover .apparitionhover5 {
     display: block;
 }
 
+.blocliste1:hover .listesidnav,
+.blocliste2:hover .listesidnav,
+.blocliste3:hover .listesidnav,
+.blocliste4:hover .listesidnav,
+.blocliste5:hover .listesidnav {
+    font-family: 'Messapia-Bold', sans-serif;
+}
+
+.apparitionhover1 {
+    top: 12.5em;
+}
+
+.apparitionhover2 {
+    top: 18em;
+}
+
+.apparitionhover3 {
+    top: 23.5em;
+}
+
+.apparitionhover4 {
+    top: 29em;
+}
+
+.apparitionhover5 {
+    top: 34.5em;
+}
 
 /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
 /* wwwwwwwwwwww LISTE RANDOM wwwwwwwwww */
@@ -247,9 +300,9 @@ p.titrememoire {
     top: 0.2em;
     left: 0.3em;
     padding-right: 0.5em;
-    font-family: 'AkzidenzGrotesk-Medium';
-    font-size: 2em;
-    line-height: 1em;
+    font-family: 'Messapia-Bold';
+    font-size: 1.5em;
+    line-height: 1.4em;
     display: none;
 }
 
