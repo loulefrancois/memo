@@ -353,6 +353,8 @@ p.nomecole {
 /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
 /* wwwwwwwwwwwww RESPONSIVE wwwwwwwwwww */
 
+/* PAULINE */
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
 
     #intro {
@@ -387,10 +389,64 @@ p.nomecole {
     #navbar {
         height: 8em;
     }
+    
+        /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
+    /* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
+
+
+    .navbtn {
+        overflow-y: auto;
+    }
+
+    /* Liste dans le sidnav */
+
+    .sidnavmenu {
+        margin-top: 13em;
+        margin-left: 5em;
+    }
+
+    p.listesidnav {
+        font-family: 'Messapia-Regular';
+        line-height: 1.7em;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .apparitionhover1,
+    .apparitionhover2,
+    .apparitionhover3,
+    .apparitionhover4,
+    .apparitionhover5 {
+        font-size: 2em;
+        line-height: 1.6em;
+        display: block;
+        position: relative;
+        left: 1.5em;
+        width: 65%;
+        margin-top: 0;
+    }
+
+    .blocliste1,
+    .blocliste2,
+    .blocliste3,
+    .blocliste4,
+    .blocliste5 {
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .apparitionhover1,
+    .apparitionhover2,
+    .apparitionhover3,
+    .apparitionhover4,
+    .apparitionhover5 {
+        top: auto;
+    }
 }
 
 
 
+/* LOU */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
