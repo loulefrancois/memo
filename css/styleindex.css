@@ -477,7 +477,7 @@ p.nomecole {
 
 /* Portable 600 */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
 
     /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
     /* wwwwwwwwwwwwwww INTRO wwwwwwwwwwwwww */
@@ -492,7 +492,7 @@ p.nomecole {
     #intro p {
         font-size: 1em;
         line-height: 1.2em;
-        color: green;
+        color: pink;
     }
 
     .AkzidenzGrotesk {
@@ -595,3 +595,13 @@ p.nomecole {
 /* Portable */
 
 @media screen and (max-width: 750px) {}
+
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    #intro p {
+        font-size: 1em;
+        line-height: 1.2em;
+        color: pink;
+    }
+}
