@@ -362,7 +362,7 @@ p.nomecole {
     }
 
     #intro p {
-        color: yellow;
+        color: orange;
         font-size: 2.7em;
         line-height: 1.3em;
     }
@@ -385,7 +385,7 @@ p.nomecole {
     }
     
     #navbar {
-        height: 6em;
+        height: 10em;
     }
 }
 
@@ -402,7 +402,7 @@ p.nomecole {
     }
 
     #intro p {
-        color: pink;
+        color: blue;
         line-height: 1.3em;
     }
 
@@ -428,7 +428,7 @@ p.nomecole {
     }
 
     #navbar {
-        height: 6em;
+        height: 10em;
     }
 
 }
