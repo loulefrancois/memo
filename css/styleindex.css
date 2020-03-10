@@ -364,13 +364,20 @@ p.nomecole {
 
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 
-          #intro p {
+
+    #intro p {
         color: mediumvioletred;
     }
-      
+
+    .container {
+        column-count: 2;
+        column-gap: 0.7em;
+        margin: 0.7em;
+        margin-top: 0em;
+        padding-top: 5em;
+    }
+
+
 }
