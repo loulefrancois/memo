@@ -357,12 +357,12 @@ p.nomecole {
 
     #intro {
         margin: 8%;
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin-top: 27%;
+        margin-bottom: 27%;
     }
 
     #intro p {
-        color: blue;
+        color: yellow;
         font-size: 2.7em;
         line-height: 1.3em;
     }
@@ -375,6 +375,15 @@ p.nomecole {
         column-count: 2;
     }
 
+    h1 {
+        font-size: 3.125em;
+    }
+
+
+    h2 {
+        font-size: 4em;
+    }
+
 }
 
 
@@ -385,12 +394,12 @@ p.nomecole {
 
     #intro {
         margin: 8%;
-        margin-top: 23%;
-        margin-bottom: 23%;
+        margin-top: 30%;
+        margin-bottom: 30%;
     }
 
     #intro p {
-        color: yellowgreen;
+        color: pink;
         line-height: 1.3em;
     }
 
@@ -406,5 +415,13 @@ p.nomecole {
         padding-top: 5em;
     }
 
+    h1 {
+        font-size: 3.125em;
+    }
+
+
+    h2 {
+        font-size: 4em;
+    }
 
 }
