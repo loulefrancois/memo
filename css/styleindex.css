@@ -383,7 +383,10 @@ p.nomecole {
     h2 {
         font-size: 6em;
     }
-
+    
+    #navbar {
+        height: 6em;
+    }
 }
 
 
@@ -422,6 +425,10 @@ p.nomecole {
 
     h2 {
         font-size: 6em;
+    }
+
+    #navbar {
+        height: 6em;
     }
 
 }
