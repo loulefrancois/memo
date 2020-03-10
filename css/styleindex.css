@@ -336,13 +336,27 @@ p.nomecole {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
 /* wwwwwwwwwwwww RESPONSIVE wwwwwwwwwww */
 
 
-/* Tablette */
+/* Portable 750 */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
 
     .container {
         column-count: 2;
@@ -390,6 +404,124 @@ p.nomecole {
 
     h2 {
         font-size: 5.6em;
+    }
+
+    /* Sticky Menu */
+
+    #navbar {
+        padding: 1.3em;
+        padding-top: 0.6em;
+        padding-right: 1.9em;
+        height: 7.1em;
+    }
+
+
+    /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
+    /* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
+
+
+    .navbtn {
+        overflow-y: auto;
+    }
+
+    /* Liste dans le sidnav */
+
+    .sidnavmenu {
+        margin-top: 13em;
+        margin-left: 5em;
+    }
+
+    p.listesidnav {
+        font-family: 'Messapia-Regular';
+        line-height: 1.7em;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .apparitionhover1,
+    .apparitionhover2,
+    .apparitionhover3,
+    .apparitionhover4,
+    .apparitionhover5 {
+        font-size: 2em;
+        line-height: 1.6em;
+        display: block;
+        position: relative;
+        left: 1.5em;
+        width: 65%;
+        margin-top: 0;
+    }
+
+    .blocliste1,
+    .blocliste2,
+    .blocliste3,
+    .blocliste4,
+    .blocliste5 {
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .apparitionhover1,
+    .apparitionhover2,
+    .apparitionhover3,
+    .apparitionhover4,
+    .apparitionhover5 {
+        top: auto;
+    }
+
+
+
+}
+
+
+
+/* Portable 600 */
+
+@media screen and (max-width: 600px) {
+
+    /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
+    /* wwwwwwwwwwwwwww INTRO wwwwwwwwwwwwww */
+
+    #intro {
+        margin: 10%;
+        margin-top: 30%;
+    }
+
+    /* Style du texte et span : */
+
+    #intro p {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+    .AkzidenzGrotesk {
+        font-size: 2em;
+    }
+
+    .Messapia {
+        font-family: 'Messapia-Regular';
+    }
+
+    /* Style de la balise + : */
+
+    a.js-scrollTo p {
+        padding-top: 3em;
+    }
+
+
+    /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
+    /* wwwwwwwwwwwwwwwww MENU wwwwwwwwwwwww */
+
+    /* Memo! */
+
+    h1 {
+        font-size: 2em;
+    }
+
+    /* + */
+
+    h2 {
+        font-size: 2em;
     }
 
     /* Sticky Menu */
