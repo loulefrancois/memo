@@ -364,7 +364,6 @@ p.nomecole {
     }
 
     #intro p {
-        color: violet;
         font-size: 2.7em;
         line-height: 1.3em;
     }
@@ -458,7 +457,6 @@ p.nomecole {
     }
 
     #intro p {
-        color: yellow;
         line-height: 1.3em;
     }
 
@@ -542,6 +540,5 @@ p.nomecole {
 
 
 
-}
 
 }

@@ -264,77 +264,22 @@ a:hover {
 /* wwwwwwwwwwwwwww RESPONSIVE wwwwwwwwwww */
 
 
+/* PAULINE */
 
-@media screen and (max-width: 1000px) {
-
-    body {
-        height: 100%;
-    }
-
-    .pdf {
-        position: absolute;
-        width: 96%;
-        height: 80%;
-        left: 2%;
-        bottom: 1%;
-    }
-
-    .info {
-        position: absolute;
-        top: 7%;
-        left: 2%;
-        height: 10%;
-        margin-right: 2%;
-    }
-
-    .titre {
-        font-family: 'Messapia-Bold';
-        font-size: 2.4em;
-        line-height: 1.3em;
-    }
-
-    .contact {
-        font-family: 'Messapia-Bold';
-        font-size: 1.5em;
-        margin-top: 2%;
-        line-height: 1.5em;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-    /* wwwwwwwwwwwwwwwww MENU wwwwwwwwwwwww */
-
-    /* Memo! */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
 
     h1 {
         font-size: 5em;
     }
 
-    /* + */
 
     h2 {
-        font-size: 5.6em;
+        font-size: 6em;
     }
-
-    /* Sticky Menu */
 
     #navbar {
-        padding: 1.3em;
-        padding-top: 0.6em;
-        padding-right: 1.9em;
-        height: 7.1em;
+        height: 8em;
     }
-
 
     /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
     /* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
@@ -388,10 +333,81 @@ a:hover {
     .apparitionhover5 {
         top: auto;
     }
-
-
-
+    
+    
 }
 
+
+
+/* LOU */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    h1 {
+        font-size: 5em;
+    }
+
+
+    h2 {
+        font-size: 6em;
+    }
+
+    #navbar {
+        height: 8em;
+    }
+    
+    /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
+    /* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
+
+
+    .navbtn {
+        overflow-y: auto;
+    }
+
+    /* Liste dans le sidnav */
+
+    .sidnavmenu {
+        margin-top: 13em;
+        margin-left: 5em;
+    }
+
+    p.listesidnav {
+        font-family: 'Messapia-Regular';
+        line-height: 1.7em;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .apparitionhover1,
+    .apparitionhover2,
+    .apparitionhover3,
+    .apparitionhover4,
+    .apparitionhover5 {
+        font-size: 2em;
+        line-height: 1.6em;
+        display: block;
+        position: relative;
+        left: 1.5em;
+        width: 65%;
+        margin-top: 0;
+    }
+
+    .blocliste1,
+    .blocliste2,
+    .blocliste3,
+    .blocliste4,
+    .blocliste5 {
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .apparitionhover1,
+    .apparitionhover2,
+    .apparitionhover3,
+    .apparitionhover4,
+    .apparitionhover5 {
+        top: auto;
+    }
 
 }
