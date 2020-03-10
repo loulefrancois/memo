@@ -357,13 +357,18 @@ p.nomecole {
 
     #intro {
         margin: 8%;
-        margin-top: 8%;
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
 
     #intro p {
-        color: orange;
+        color: blue;
         font-size: 2.7em;
-        line-height: 0.9em;
+        line-height: 1.3em;
+    }
+
+    .AkzidenzGrotesk {
+        font-size: 2em;
     }
 
     .container {
@@ -380,11 +385,17 @@ p.nomecole {
 
     #intro {
         margin: 8%;
-        margin-top: 8%;
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
 
     #intro p {
-        color: mediumvioletred;
+        color: yellowgreen;
+        line-height: 1.3em;
+    }
+
+    .AkzidenzGrotesk {
+        font-size: 2em;
     }
 
     .container {
