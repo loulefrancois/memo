@@ -477,7 +477,7 @@ p.nomecole {
 
 /* Portable 600 */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 321px) {
 
     /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
     /* wwwwwwwwwwwwwww INTRO wwwwwwwwwwwwww */
@@ -492,7 +492,7 @@ p.nomecole {
     #intro p {
         font-size: 1em;
         line-height: 1.2em;
-        color: blue;
+        color: green;
     }
 
     .AkzidenzGrotesk {
