@@ -1,16 +1,21 @@
-/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-/* wwwwwwwwwwwwwwww TOUT wwwwwwwwwwwwww */
+/* //////////////////////////////////// */
+/* /////////////// TOUT /////////////// */
+/* //////////////////////////////////// */
 
 * {
-    box-sizing: border-box
-}
-
-body {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-/* wwwwwwwwwwwww @font-face wwwwwwwwwww */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* //////////////////////////////////// */
+/* //////////// @FONT-FACE //////////// */
+/* //////////////////////////////////// */
 
 @font-face {
     font-family: 'AkzidenzGrotesk-Medium';
@@ -32,242 +37,117 @@ body {
     src: url("../font/Pilowlava-Regular.otf");
 }
 
-/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-/* wwwwwwwwwwwwwww INTRO wwwwwwwwwwwwww */
-
-#intro {
-    margin: 15%;
-    margin-top: 8%;
-}
-
-/* Style du texte et span : */
-
-#intro p {
-    font-size: 3em;
-    font-family: 'Messapia-Regular';
-    color: black;
-    margin: 0;
-}
-
-.Pilowlava {
-    font-family: 'Pilowlava-Regular', sans-serif;
-}
-
-.MessapiaBold {
-    font-family: 'Messapia-Bold';
-    font-size: 0.9em;
-}
-
-.AkzidenzGrotesk {
-    font-family: 'AkzidenzGrotesk-Medium';
-    font-size: 1.1em;
-}
-
-.Messapia {
-    font-family: 'Messapia-Regular';
-}
-
-/* Style de la balise + : */
-
-a.js-scrollTo p {
-    text-align: center;
-    padding-top: 1.5em;
-}
-
-a.js-scrollTo {
-    text-decoration: none;
-}
-
-/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-/* wwwwwwwwwwwwwwwww MENU wwwwwwwwwwwww */
-
-/* Memo! */
+/* //////////////////////////////////// */
+/* /////////////// FONT /////////////// */
+/* //////////////////////////////////// */
 
 h1 {
-    font-family: 'Pilowlava-Regular', sans-serif;
-    float: left;
-    width: 50%;
-    margin: 0;
+    font-family: 'Pilowlava-Regular';
     font-size: 2.5em;
-    z-index: 1000;
 }
 
-h1 a {
-    text-decoration: none;
-    color: black;
-}
-
-/* + */
-
-h2 {
-    font-family: 'AkzidenzGrotesk-Medium';
-    font-size: 3em;
-    display: inline;
-    float: right;
-    top: 0;
-    margin: 0;
-}
-
-h2:hover {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
-    transition: 0.7s;
+h1:hover {
     cursor: pointer;
 }
 
-/* Sticky Menu */
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#navbar {
-    z-index: 1000;
-    background-color: white;
-    width: 100%;
-    top: 0;
-    padding: 0.6em;
-    padding-top: 0.35em;
-    padding-right: 1em;
-    height: 4em;
-}
-
-
-/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-/* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
-
-/* Menu déroulant : */
-
-.navbtn {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 5000;
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow-y: hidden;
-    transition: 0.5s;
-    padding: 0.6em;
-    padding-top: 0.3em;
-}
-
-.navbtn a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    transition: 0.3s;
-}
-
-.navbtn .closebtn h2.croix {
-    position: absolute;
-    float: right;
-    top: 0.1em;
-    right: 0.35em;
-    overflow-y: hidden;
-}
-
-/* x */
-
-h2.croix {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-h2.croix:hover {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
-    transition: 0.7s;
-    cursor: pointer;
-}
-
-/* Liste dans le sidnav */
-
-.sidnavmenu {
-    margin-top: 13em;
-    margin-left: 40em;
-}
-
-.listesidnav {
+#menu li {
     font-family: 'Messapia-Regular';
-    line-height: 1.7em;
-    font-size: 3.5em;
+    font-size: 1.3em;
 }
 
-.apparitionhover1,
-.apparitionhover2,
-.apparitionhover3,
-.apparitionhover4,
-.apparitionhover5 {
+.messapia_bold {
     font-family: 'Messapia-Bold';
-    font-size: 1.2em;
-    line-height: 1.6em;
+}
+
+/* //////////////////////////////////// */
+/* /////////////// MENU /////////////// */
+/* //////////////////////////////////// */
+
+
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+#croix {
+    width: 30px;
+    float: right;
+    margin: 10px;
+    margin-right: 15px;
+    z-index: 1000;
+}
+
+#croix:hover svg {
+    z-index: 1000;
+    transform: rotate(180deg);
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+}
+
+#croix:hover #menu {
+    transform: translateX(-165%);
+}
+
+#menu {
+    z-index: 900;
+    position: absolute;
+    /* on cache les sous menus complètement sur la gauche */
+    top: 50px;
+    right: -100%;
+    width: 60%;
+    background-color: white;
+    transition: all .8s;
+    padding: 15px;
+}
+
+#menu li {
+    float: inherit;
+    text-align: right;
+    margin: 5%;
+}
+
+
+
+/* TEST */
+header ul ul#menu:hover {
+    cursor: pointer;
+}
+
+header ul ul#menu #apropos_contenu,
+header ul ul#menu #droitsauteurs_contenu,
+header ul ul#menu #contacts_contenu,
+header ul ul#menu #mentionslegales_contenu {
     display: none;
     position: absolute;
-    left: 5em;
-    width: 30%;
+    text-align: left;
+    width: 35%;
+    left: 0;
+    top: 0;
 }
 
-.blocliste1,
-.blocliste2,
-.blocliste3,
-.blocliste4,
-.blocliste5 {
-    height: 3em;
-}
 
-.blocliste1:hover .apparitionhover1,
-.blocliste2:hover .apparitionhover2,
-.blocliste3:hover .apparitionhover3,
-.blocliste4:hover .apparitionhover4,
-.blocliste5:hover .apparitionhover5 {
-    display: block;
-}
+/* //////////////////////////////////// */
+/* ////////////// CONTENU ///////////// */
+/* //////////////////////////////////// */
 
-.blocliste1:hover .listesidnav,
-.blocliste2:hover .listesidnav,
-.blocliste3:hover .listesidnav,
-.blocliste4:hover .listesidnav,
-.blocliste5:hover .listesidnav {
-    font-family: 'Messapia-Bold', sans-serif;
-}
-
-.apparitionhover1 {
-    top: 12.5em;
-}
-
-.apparitionhover2 {
-    top: 18em;
-}
-
-.apparitionhover3 {
-    top: 23.5em;
-}
-
-.apparitionhover4 {
-    top: 29em;
-}
-
-.apparitionhover5 {
-    top: 34.5em;
-}
-
-/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-/* wwwwwwwwwwww LISTE RANDOM wwwwwwwwww */
-
-/* Container */
-
-.container {
+.contenu {
     column-count: 5;
-    column-gap: 0.7em;
-    margin: 0.7em;
+    column-gap: 15px;
+    margin: 15px;
     margin-top: 0em;
-    padding-top: 5em;
+    padding-top: 4em;
 }
 
 /* Image de couverture */
@@ -280,8 +160,8 @@ img {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 0.7em;
-    padding: 1em;
+    margin-bottom: 15px;
+    padding: 15px;
     background-color: rgb(224, 224, 224);
     display: inline-block;
 }
@@ -307,7 +187,7 @@ p.titrememoire {
     display: none;
 }
 
-p.nomecole {
+p.auteur {
     bottom: 0.7em;
     left: 0.7em;
     font-family: 'Messapia-Regular';
@@ -336,209 +216,17 @@ p.nomecole {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-/* wwwwwwwwwwwww RESPONSIVE wwwwwwwwwww */
-
-/* PAULINE */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-
-    #intro {
-        margin: 8%;
-        margin-top: 27%;
-        margin-bottom: 27%;
-    }
-
-    #intro p {
-        font-size: 2.7em;
-        line-height: 1.3em;
-    }
-
-    .AkzidenzGrotesk {
-        font-size: 2em;
-    }
-
-    .container {
-        column-count: 2;
-    }
-
-    h1 {
-        font-size: 5em;
-    }
-
-
-    h2 {
-        font-size: 6em;
-    }
-
-    #navbar {
-        height: 8em;
-    }
-    
-        /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-    /* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
-
-
-    .navbtn {
-        overflow-y: auto;
-    }
-
-    /* Liste dans le sidnav */
-
-    .sidnavmenu {
-        margin-top: 13em;
-        margin-left: 5em;
-    }
-
-    p.listesidnav {
-        font-family: 'Messapia-Regular';
-        line-height: 1.7em;
-        font-size: 3em;
-        margin-bottom: 0;
-    }
-
-    .apparitionhover1,
-    .apparitionhover2,
-    .apparitionhover3,
-    .apparitionhover4,
-    .apparitionhover5 {
-        font-size: 2em;
-        line-height: 1.6em;
-        display: block;
-        position: relative;
-        left: 1.5em;
-        width: 65%;
-        margin-top: 0;
-    }
-
-    .blocliste1,
-    .blocliste2,
-    .blocliste3,
-    .blocliste4,
-    .blocliste5 {
-        height: auto;
-        margin-bottom: 3em;
-    }
-
-    .apparitionhover1,
-    .apparitionhover2,
-    .apparitionhover3,
-    .apparitionhover4,
-    .apparitionhover5 {
-        top: auto;
-    }
-}
-
-
-
-/* LOU */
+* LOU */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 
-    #intro {
-        margin: 8%;
-        margin-top: 30%;
-        margin-bottom: 30%;
-    }
+    /* //////////////////////////////////// */
+    /* ////////////// CONTENU ///////////// */
+    /* //////////////////////////////////// */
 
-    #intro p {
-        line-height: 1.3em;
-    }
-
-    .AkzidenzGrotesk {
-        font-size: 2em;
-    }
-
-    .container {
+    .contenu {
         column-count: 2;
-        column-gap: 0.7em;
-        margin: 0.7em;
-        margin-top: 0em;
-        padding-top: 5em;
     }
-
-    h1 {
-        font-size: 5em;
-    }
-
-
-    h2 {
-        font-size: 6em;
-    }
-
-    #navbar {
-        height: 8em;
-    }
-
-    /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
-    /* wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww */
-
-
-    .navbtn {
-        overflow-y: auto;
-    }
-
-    /* Liste dans le sidnav */
-
-    .sidnavmenu {
-        margin-top: 13em;
-        margin-left: 5em;
-    }
-
-    p.listesidnav {
-        font-family: 'Messapia-Regular';
-        line-height: 1.7em;
-        font-size: 3em;
-        margin-bottom: 0;
-    }
-
-    .apparitionhover1,
-    .apparitionhover2,
-    .apparitionhover3,
-    .apparitionhover4,
-    .apparitionhover5 {
-        font-size: 2em;
-        line-height: 1.6em;
-        display: block;
-        position: relative;
-        left: 1.5em;
-        width: 65%;
-        margin-top: 0;
-    }
-
-    .blocliste1,
-    .blocliste2,
-    .blocliste3,
-    .blocliste4,
-    .blocliste5 {
-        height: auto;
-        margin-bottom: 3em;
-    }
-
-    .apparitionhover1,
-    .apparitionhover2,
-    .apparitionhover3,
-    .apparitionhover4,
-    .apparitionhover5 {
-        top: auto;
-    }
-
-
-
 
 }

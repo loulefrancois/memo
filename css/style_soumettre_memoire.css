@@ -1,0 +1,159 @@
+/* //////////////////////////////////// */
+/* /////////////// TOUT /////////////// */
+/* //////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* //////////////////////////////////// */
+/* //////////// @FONT-FACE //////////// */
+/* //////////////////////////////////// */
+
+@font-face {
+    font-family: 'AkzidenzGrotesk-Medium';
+    src: url("../font/AkzidenzGrotesk-Medium.otf");
+}
+
+@font-face {
+    font-family: 'Messapia-Regular';
+    src: url("../font/Messapia-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Messapia-Bold';
+    src: url("../font/Messapia-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Pilowlava-Regular';
+    src: url("../font/Pilowlava-Regular.otf");
+}
+
+/* //////////////////////////////////// */
+/* /////////////// FONT /////////////// */
+/* //////////////////////////////////// */
+
+h1 {
+    font-family: 'Pilowlava-Regular';
+    font-size: 2.5em;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+#menu li {
+    font-family: 'Messapia-Regular';
+    font-size: 1.3em;
+}
+
+.messapia_bold {
+    font-family: 'Messapia-Bold';
+}
+
+.pilowlava {
+    font-family: 'Pilowlava-Regular';
+}
+
+#informations p {
+    font-family: 'Messapia-Regular';
+}
+
+#avertissement p {
+    font-family: 'Messapia-Regular';
+    font-size: 0.7em;
+}
+
+/* //////////////////////////////////// */
+/* /////////////// MENU /////////////// */
+/* //////////////////////////////////// */
+
+
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+#croix {
+    width: 30px;
+    float: right;
+    margin: 10px;
+    margin-right: 15px;
+    z-index: 1000;
+}
+
+#croix:hover svg {
+    z-index: 1000;
+    transform: rotate(180deg);
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+}
+
+#croix:hover #menu {
+    transform: translateX(-165%);
+}
+
+#menu {
+    z-index: 900;
+    position: absolute;
+    /* on cache les sous menus complètement sur la gauche */
+    top: 50px;
+    right: -100%;
+    width: 60%;
+    background-color: white;
+    transition: all .8s;
+    padding: 15px;
+}
+
+#menu li {
+    float: inherit;
+    text-align: right;
+    margin: 5%;
+}
+
+
+
+header ul ul#menu:hover {
+    cursor: pointer;
+}
+
+header ul ul#menu #apropos_contenu,
+header ul ul#menu #droitsauteurs_contenu,
+header ul ul#menu #contacts_contenu,
+header ul ul#menu #mentionslegales_contenu {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 35%;
+    left: 0;
+    top: 0;
+}
+
+/* //////////////////////////////////// */
+/* ////////////// CONTENU ///////////// */
+/* //////////////////////////////////// */
+
+#formulaire {
+    position: absolute;
+    top: 5em;
+}

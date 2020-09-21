@@ -3,111 +3,83 @@
 <html lang="fr">
 <meta charset="utf-8" />
 
-
 <head>
 
     <!-- Ce qui est écris sur l'onglet : -->
-    <title>Memo!</title>
+    <title>Memo! 2</title>
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="" />
+    <link rel="shortcut icon" href="image/icone.ico" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styleindex.css" />
-    <!-- Touche pas -->
     <!-- JAVASCRIPT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
 
 </head>
 
 
 <body>
 
-    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
-    <!-- wwwwwwwwwwwwwww INTRO wwwwwwwwwwwww -->
+    <!-- //////////////////////////////////// -->
+    <!-- /////////////// MENU /////////////// -->
+    <!-- //////////////////////////////////// -->
 
-    <div id="intro">
+    <header>
 
-        <p><span class="Pilowlava">Memo!</span> est la plateforme de diffusion des <span class="MessapiaBold">mémoires de DNSEP design graphique</span> en France. Ces écrits sont le fruit d'un travail étudiants partagés ici pour montrer l'étendue de la recherche dans ce domaine. Par <span class="MessapiaBold">respect pour le travail</span> des étudiants nous rappelons que ces écrits sont soumis à la propriété intelectuelle.</p>
-        <p><span class="couleur">Bonne lecture</span> sur <span class="Pilowlava">Memo!</span></p>
+        <ul>
+            <li>
+                <h1 onclick="history.go(0)">Memo!</h1>
+            </li>
 
-        <a class="js-scrollTo" href="#navbar">
-            <p>
-                <span class="AkzidenzGrotesk">+</span>
-            </p>
-        </a>
+            <li id="croix">
+                <span onclick="openNav()">
+                    <svg id="croixrotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.76 10.72">
+                        <path d="M6.68,6.4v4.32H4.08V6.4H0V4.26H4.08V0h2.6V4.26h4.08V6.4Z" />
+                    </svg>
+                </span>
 
-    </div>
+                <ul id="menu">
 
-    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
-    <!-- wwwwwwwwwwwwwwww MENU wwwwwwwwwwwwww -->
+                    <li id="apropos">À propos</li>
+                    <li id="apropos_contenu">
+                        Ce site est une plateforme de diffusion des mémoires de DNSEP design graphique. Il a pour but de montrer l'étendue de la recherche dans ce domaine en France.
+                    </li>
+                    <li id="droitsauteurs">Droits d'auteurs</li>
+                    <li id="droitsauteurs_contenu">
+                        Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.
+                    </li>
+                    <li id="contacts">Contacts</li>
+                    <li id="contacts_contenu">
+                        adressemail@gmail.com
+                    </li>
+                    <li id="mentionslegales">Mentions légales</li>
+                    <li id="mentionslegales_contenu">
+                        Fonts : Messapia Bold,
+                        Messapia Regular, Luca Marsano, Colllectttivo.<br>
+                        Pilowlava Anton Moglia & Jérémy Landes, Velvetyne Type Foundry.<br>
+                        Web Design et développement : Pauline Duret & Lou Lefrançois.
+                    </li>
+                    <li><a href="soumettre_memoire.html"><span class="messapia_bold">Soumettre son mémoire</span></a></li>
 
-    <div id="navbar">
+                </ul>
 
-        <h1><a href="#actualiser">Memo!</a></h1>
+            </li>
 
-        <span onclick="openNav()">
-            <h2>+</h2>
-        </span>
+        </ul>
 
-    </div>
+    </header>
 
-    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
-    <!-- wwwwwwwwwwwwwww SIDNAV wwwwwwwwwwwww -->
+    <!-- //////////////////////////////////// -->
+    <!-- ////////////// CONTENU ///////////// -->
+    <!-- //////////////////////////////////// -->
 
-    <div id="myNav" class="navbtn">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <h2 class="croix">+</h2>
-        </a>
-
-        <div class="sidnavmenu">
-
-            <div class="blocliste1">
-                <p class="listesidnav">À propos</p>
-                <p class="apparitionhover1">Ce site est une plateforme de diffusion des mémoires de DNSEP design graphique. Il a pour but de montrer l'étendue de la recherche dans ce domaine en France.</p>
-            </div>
-
-            <div class="blocliste2">
-                <p class="listesidnav">Droits d'auteurs</p>
-                <p class="apparitionhover2">Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.</p>
-            </div>
-
-            <div class="blocliste3">
-                <p class="listesidnav">Soumettre un mémoire</p>
-                <p class="apparitionhover3">En cliquant sur soumettre un mémoire vous téléchargerez un pdf explicatif.</p>
-            </div>
-
-            <div class="blocliste4">
-                <p class="listesidnav">Contact</p>
-                <p class="apparitionhover4">ladressemail@gmail.com</p>
-            </div>
-
-            <div class="blocliste5">
-                <p class="listesidnav">Mention légales</p>
-                <p class="apparitionhover5">
-                    Fonts : Messapia Bold,
-                    <span class="Messapia">Messapia Regular</span>, Luca Marsano, Colllectttivo.<br>
-                    <span class="Pilowlava">Pilowlava</span> Anton Moglia & Jérémy Landes, Velvetyne Type Foundry.<br>
-                    <span class="marge">Web Design et développement : Pauline Duret & Lou Lefrançois.</span>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
-    <!-- wwwwwwwwwwwwww CONTENU wwwwwwwwwwww -->
-
-    <div id="actualiser"></div>
-
-    <div class="container">
+    <div class="contenu">
 
         <div class="couv">
             <img src="image/couv_1.jpg" alt="" />
             <p class="titrememoire">Le marketing des chats</p>
-            <p class="nomecole">Elm Lucie, isdaT, 2020</p>
+            <p class="auteur">Elm Lucie, isdaT, 2020</p>
             <div class="auhover"></div>
         </div>
 
@@ -115,115 +87,165 @@
             <a href="pdfmemoire.html">
                 <img src="image/couv_2.jpg" alt="" />
                 <p class="titrememoire">L'imitation de vitesse</p>
-                <p class="nomecole"> GUIMIER Benoît<br>isdat, 2020 </p>
+                <p class="auteur"> GUIMIER Benoît<br>isdat, 2020 </p>
                 <div class="auhover"></div>
             </a>
         </div>
 
         <div class="couv">
             <img src="image/couv_3.jpg" alt="" />
-            <p class="titrememoire">Un chat Ultra, Guillaume</p>
-            <p class="nomecole">isdaT, 2019</p>
+            <p class="titrememoire">Un chat Ultra</p>
+            <p class="auteur">isdaT, 2019</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_4.jpg" alt="" />
             <p class="titrememoire">la légende</p>
-            <p class="nomecole">en bas svp</p>
+            <p class="auteur">en bas svp</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_5.jpg" alt="" />
             <p class="titrememoire">la légende</p>
-            <p class="nomecole">en bas svp</p>
+            <p class="auteur">en bas svp</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_6.jpg" alt="" />
             <p class="titrememoire">Un chat Ultra, Guillaume</p>
-            <p class="nomecole">isdaT, 2019</p>
+            <p class="auteur">isdaT, 2019</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_7.jpg" alt="" />
             <p class="titrememoire">la légende</p>
-            <p class="nomecole">en bas svp</p>
+            <p class="auteur">en bas svp</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_8.jpg" alt="" />
             <p class="titrememoire">la légende</p>
-            <p class="nomecole">en bas svp</p>
+            <p class="auteur">en bas svp</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_9.jpg" alt="" />
             <p class="titrememoire">Le marketing des chats, Elm Lucie</p>
-            <p class="nomecole">isdaT, 2020</p>
+            <p class="auteur">isdaT, 2020</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_10.jpg" alt="" />
-            <p class="titrememoire">L'imitation de la vitesse d'un chat, Guimier Benoît</p>
-            <p class="nomecole">isdaT, 2020</p>
+            <p class="titrememoire">L'imitation de la vitesse d'un chat</p>
+            <p class="auteur">isdaT, 2020</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_11.jpg" alt="" />
             <p class="titrememoire">Un chat Ultra, Guillaume</p>
-            <p class="nomecole">isdaT, 2019</p>
+            <p class="auteur">isdaT, 2019</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_12.jpg" alt="" />
             <p class="titrememoire">la légende</p>
-            <p class="nomecole">en bas svp</p>
+            <p class="auteur">en bas svp</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_13.jpg" alt="" />
             <p class="titrememoire">la légende</p>
-            <p class="nomecole">en bas svp</p>
+            <p class="auteur">en bas svp</p>
             <div class="auhover"></div>
         </div>
 
         <div class="couv">
             <img src="image/couv_14.jpg" alt="" />
             <p class="titrememoire">Un chat Ultra, Guillaume</p>
-            <p class="nomecole">isdaT, 2019</p>
+            <p class="auteur">isdaT, 2019</p>
             <div class="auhover"></div>
         </div>
 
+        <div class="couv">
+            <a href="memoire_15.html">
+                <img src="image/couv_15.jpg" alt="" />
+                <p class="titrememoire">Mémoire</p>
+                <p class="auteur">Lou Lefrançois,<br>isdaT, 2019</p>
+                <div class="auhover"></div>
+            </a>
+        </div>
 
     </div>
 
-    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
-    <!-- wwwwwwwwwwwwww FIN BODY wwwwwwwwwwww -->
-
 </body>
 
+<!-- //////////////////////////////////// -->
+<!-- ////////////// SCRIPT ////////////// -->
+<!-- //////////////////////////////////// -->
 
+<script>
+    $("#apropos").mouseover(function() {
+        $("header ul ul#menu #apropos_contenu").css("display", "block");
+    });
 
+    $("#apropos").mouseout(function() {
+        $("header ul ul#menu #apropos_contenu").css("display", "none");
+    });
+</script>
 
+<script>
+    $("#droitsauteurs").mouseover(function() {
+        $("header ul ul#menu #droitsauteurs_contenu").css("display", "block");
+    });
 
-<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
-<!-- SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT -->
+    $("#droitsauteurs").mouseout(function() {
+        $("header ul ul#menu #droitsauteurs_contenu").css("display", "none");
+    });
+</script>
 
+<script>
+    $("#contacts").mouseover(function() {
+        $("header ul ul#menu #contacts_contenu").css("display", "block");
+    });
+
+    $("#contacts").mouseout(function() {
+        $("header ul ul#menu #contacts_contenu").css("display", "none");
+    });
+</script>
+
+<script>
+    $("#mentionslegales").mouseover(function() {
+        $("header ul ul#menu #mentionslegales_contenu").css("display", "block");
+    });
+
+    $("#mentionslegales").mouseout(function() {
+        $("header ul ul#menu #mentionslegales_contenu").css("display", "none");
+    });
+</script>
+
+<script>
+    // Taille height et width de l'écran
+    var ecranHeight = $(window).height();
+    var ecranWidth = $(window).width();
+
+    // Taille automatique du groupe
+    $("#menu").css("height", ecranHeight);
+</script>
 <!-- SCRIPT MATH.RANDOM : -->
 
 <script>
     $(document).ready(function() {
-        var collection = $("div.container div.couv").get();
+        var collection = $("div.contenu div.couv").get();
         collection.sort(function() {
             return Math.random() * 10 > 5 ? 1 : -1;
         });
@@ -232,60 +254,5 @@
         });
     });
 </script>
-
-<!-- STICKY MENU : -->
-
-<script>
-    window.onscroll = function() {
-        myFunction()
-    };
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
-</script>
-
-<!-- SCRIPT DESCENTE APRÈS INTRO : -->
-
-<script>
-    $(document).ready(function() {
-        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-            var page = $(this).attr('href'); // Page cible
-            var speed = 750; // Durée de l'animation (en ms)
-            $('html, body').animate({
-                scrollTop: $(page).offset().top
-            }, speed); // Go
-            return false;
-        });
-    });
-</script>
-
-<!-- SCRIPT + : -->
-
-<script>
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-    }
-
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-    }
-</script>
-
-<script>
-    $('h1').click(function() {
-        javascript: location.reload();
-    });
-</script>
-
-<!-- SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT -->
-<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 
 </html>
