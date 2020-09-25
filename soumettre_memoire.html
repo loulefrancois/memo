@@ -98,12 +98,25 @@
 
     <div id="contenu">
 
-        <form method="post" action="mail.php">
-            <label>Tape ton message ici pour m'écrire</label>
-            <textarea rows="10" cols="30" name="message"></textarea>
-            <input type="submit">
+        <form method="post" action="envoi.php">
+            <p>Votre nom:<br>
+                <input type="text" name="nom" size=30>
+            </p>
+            <p>Votre adresse E-Mail:<br>
+                <input type="text" name="email" size=30>
+            </p>
+            <p>Message:<br>
+                <textarea name="message" cols=30 rows=5></textarea>
+            </p><input type="submit" value="Envoyer">
         </form>
 
+        <!-- //////////////////////////////////// -->
+        <!-- ////////////// CONTENU ///////////// -->
+        <!-- //////////////////////////////////// -->
+
+        <br>
+        <br>
+        <br>
         <div id="formulaire">
             <form method="post" action="traitement.php">
                 <p>
@@ -200,7 +213,6 @@
         $("body, #menu").css("background-color", "#f6f6f6");
         $(".couv").css("background-color", "#dadada");
     });
-
 </script>
 
 <script>
@@ -209,7 +221,6 @@
     }, function() {
         $("#menu").css("transform", "translateX(165%)")
     });
-
 </script>
 
 <script>
@@ -224,7 +235,6 @@
         $("#apropos").css("display", "block");
         $("#apropos2").css("display", "none");
     });
-
 </script>
 
 <script>
@@ -239,7 +249,6 @@
         $("#droitsauteurs").css("display", "block");
         $("#droitsauteurs2").css("display", "none");
     });
-
 </script>
 
 <script>
@@ -254,7 +263,6 @@
         $("#contacts").css("display", "block");
         $("#contacts2").css("display", "none");
     });
-
 </script>
 
 <script>
@@ -269,7 +277,6 @@
         $("#mentionslegales").css("display", "block");
         $("#mentionslegales2").css("display", "none");
     });
-
 </script>
 
 <script>
@@ -279,7 +286,6 @@
 
     // Taille automatique du groupe
     $("#menu").css("height", ecranHeight);
-
 </script>
 
 </html>
