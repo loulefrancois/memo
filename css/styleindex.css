@@ -13,6 +13,10 @@ a {
     color: black;
 }
 
+body {
+    background-color: #f6f6f6;
+}
+
 /* //////////////////////////////////// */
 /* //////////// @FONT-FACE //////////// */
 /* //////////////////////////////////// */
@@ -37,13 +41,34 @@ a {
     src: url("../font/Pilowlava-Regular.otf");
 }
 
+@font-face {
+    font-family: 'AkzidenzGrotesk-BoldCond';
+    src: url("../font/AkzidenzGrotesk-BoldCond.otf");
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk-Cond';
+    src: url("../font/AkzidenzGrotesk-Cond.otf");
+}
+
 /* //////////////////////////////////// */
 /* /////////////// FONT /////////////// */
 /* //////////////////////////////////// */
 
 h1 {
     font-family: 'Pilowlava-Regular';
-    font-size: 2.5em;
+    font-size: 4.2em;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 5px;
+    z-index: 100;
+}
+
+#m-index {
+    z-index: 1000;
 }
 
 h1:hover {
@@ -51,25 +76,56 @@ h1:hover {
 }
 
 #menu li {
-    font-family: 'Messapia-Regular';
-    font-size: 1.3em;
+    font-family: 'AkzidenzGrotesk-Cond';
+    writing-mode: vertical-rl;
+    font-size: 2.8em;
+
 }
 
-.messapia_bold {
-    font-family: 'Messapia-Bold';
+ul#menu li#apropos_contenu,
+ul#menu li#droitsauteurs_contenu,
+ul#menu li#contacts_contenu,
+ul#menu li#mentionslegales_contenu {
+    font-size: 1.5em;
+    display: none;
+}
+
+#log {
+    position: absolute;
+    position: fixed;
+    z-index: 1500;
+    top: 0;
+    font-family: 'AkzidenzGrotesk-Cond';
+    font-size: 3em;
+}
+
+/* //////////////////////////////////// */
+/* ////////////// COLORS ////////////// */
+/* //////////////////////////////////// */
+
+.orange {
+    color: #dd480e;
+}
+
+.vert {
+    color: #447f44;
+}
+
+.rose {
+    color: #d3989c;
+}
+
+.bleu {
+    color: #2f628c;
+}
+
+.jaune {
+    color: #edac0a;
 }
 
 /* //////////////////////////////////// */
 /* /////////////// MENU /////////////// */
 /* //////////////////////////////////// */
-
-
-header {
-    background-color: white;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-}
 
 ul {
     list-style-type: none;
@@ -78,10 +134,14 @@ ul {
 li {
     float: left;
     margin: 5px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 #croix {
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 0;
     width: 30px;
     float: right;
     margin: 10px;
@@ -90,64 +150,98 @@ li {
 }
 
 #croix:hover svg {
-    z-index: 1000;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition: transform .8s ease-in-out;
     cursor: pointer;
 }
 
-#croix:hover #menu {
-    transform: translateX(-165%);
-}
 
 #menu {
     z-index: 900;
     position: absolute;
-    /* on cache les sous menus complètement sur la gauche */
-    top: 50px;
+    position: fixed;
     right: -100%;
-    width: 60%;
-    background-color: white;
+    top: 0;
+    width: 60.5%;
+    background-color: #f6f6f6;
     transition: all .8s;
-    padding: 15px;
+    padding: 30px;
 }
-
-#menu li {
-    float: inherit;
-    text-align: right;
-    margin: 5%;
-}
-
 
 
 /* TEST */
-header ul ul#menu:hover {
+ul#menu li#apropos:hover,
+ul#menu li#apropos2:hover,
+ul#menu li#droitsauteurs:hover,
+ul#menu li#droitsauteurs2:hover,
+ul#menu li#contacts:hover,
+ul#menu li#contacts2:hover,
+ul#menu li#mentionslegales:hover,
+ul#menu li#mentionslegales2:hover {
     cursor: pointer;
 }
 
-header ul ul#menu #apropos_contenu,
-header ul ul#menu #droitsauteurs_contenu,
-header ul ul#menu #contacts_contenu,
-header ul ul#menu #mentionslegales_contenu {
+ul#menu li#apropos2,
+ul#menu li#droitsauteurs2,
+ul#menu li#contacts2,
+ul#menu li#mentionslegales2 {
     display: none;
-    position: absolute;
-    text-align: left;
-    width: 35%;
-    left: 0;
-    top: 0;
 }
 
+ul#menu li#apropos_contenu,
+ul#menu li#droitsauteurs_contenu,
+ul#menu li#contacts_contenu,
+ul#menu li#mentionslegales_contenu {
+    width: 20%;
+    writing-mode: horizontal-tb;
+}
+
+#ligneblanche {
+    width: 100%;
+    height: 3px;
+}
+
+/* BOUTONS JOUR NUIT */
+
+#bouton_nuit,
+#bouton_jour {
+    margin-right: 17px;
+    position: absolute;
+    position: fixed;
+    top: 3em;
+    right: 0;
+    width: 25px;
+    z-index: 800;
+}
+
+#bouton_nuit:hover,
+#bouton_jour:hover {
+    cursor: pointer;
+}
+
+
+#bouton_nuit {
+    fill: #2f628c;
+
+}
+
+#bouton_jour {
+    display: none;
+    fill: #d3989c;
+}
 
 /* //////////////////////////////////// */
 /* ////////////// CONTENU ///////////// */
 /* //////////////////////////////////// */
 
 .contenu {
+    position: relative;
+    background-color: #f6f6f6;
     column-count: 5;
     column-gap: 15px;
     margin: 15px;
-    margin-top: 0em;
-    padding-top: 4em;
+    margin-top: 20em;
+    z-index: 500
 }
 
 /* Image de couverture */
@@ -162,7 +256,7 @@ img {
     overflow: hidden;
     margin-bottom: 15px;
     padding: 15px;
-    background-color: rgb(224, 224, 224);
+    background-color: #dadada;
     display: inline-block;
 }
 
@@ -178,19 +272,20 @@ img {
 /* Hover grisé */
 
 p.titrememoire {
+    font-family: 'AkzidenzGrotesk-Cond';
     top: 0.2em;
     left: 0.3em;
     padding-right: 0.5em;
-    font-family: 'Messapia-Bold';
-    font-size: 1.5em;
+    font-size: 2.5em;
     line-height: 1.4em;
     display: none;
 }
 
 p.auteur {
+    font-family: 'AkzidenzGrotesk-Cond';
     bottom: 0.7em;
     left: 0.7em;
-    font-family: 'Messapia-Regular';
+    font-size: 1.8em;
     display: none;
 }
 

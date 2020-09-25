@@ -6,7 +6,7 @@
 <head>
 
     <!-- Ce qui est écris sur l'onglet : -->
-    <title>Memo! 2</title>
+    <title>Memo!</title>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="image/icone.ico" />
@@ -24,51 +24,75 @@
     <!-- //////////////////////////////////// -->
     <!-- /////////////// MENU /////////////// -->
     <!-- //////////////////////////////////// -->
+    <p id="log" style="display: none;">test</p>
 
-    <header>
+    <h1 onclick="history.go(0)" id="m-index"><span class="orange">M</span></h1>
 
-        <ul>
-            <li>
-                <h1 onclick="history.go(0)">Memo!</h1>
-            </li>
+    <h1 onclick="history.go(0)"><span class="orange" style="opacity: 0;">M</span><span class="vert">E</span><span class="rose">M</span><span class="bleu">O</span><span class="jaune">!</span></h1>
 
-            <li id="croix">
-                <span onclick="openNav()">
-                    <svg id="croixrotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.76 10.72">
-                        <path d="M6.68,6.4v4.32H4.08V6.4H0V4.26H4.08V0h2.6V4.26h4.08V6.4Z" />
-                    </svg>
-                </span>
+    <div id="croix">
+        <span onclick="openNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.56 28.02" style="fill: #edac0a">
+                <path d="M11.64,12.24a.49.49,0,0,0,.54-.78L6.84,6.12A4,4,0,0,1,5.58,3.3C5.58,1.5,7.32.24,9.24.24c2.22,0,3,1.38,3.42,3.48l1.08,6.66a.5.5,0,0,0,.48.36c.18,0,.3-.06.42-.3l5.1-8.34c.9-1.44,1.8-2,2.82-2.1a3.07,3.07,0,0,1,3.12,2.76c0,.84-.6,1.62-1.68,2.52l-8.52,6.48a.52.52,0,0,0-.18.36.38.38,0,0,0,.42.42l9.9,1.8a3.24,3.24,0,0,1,2.94,3.24A3.45,3.45,0,0,1,25,21.12c-1.2,0-2.16-1-3.84-2.22l-5.94-4.68c-.3-.24-.78-.24-.84.36l-.18,9.24C14,26,13.2,28,11,28s-3.48-2-2.58-4.26l4.2-9.66a.47.47,0,0,0-.6-.66L3.78,16.26C1.44,17,0,15.84,0,13.62c0-2.7,2-3.84,5.22-2.94Z" />
+            </svg>
 
-                <ul id="menu">
+        </span>
 
-                    <li id="apropos">À propos</li>
-                    <li id="apropos_contenu">
-                        Ce site est une plateforme de diffusion des mémoires de DNSEP design graphique. Il a pour but de montrer l'étendue de la recherche dans ce domaine en France.
-                    </li>
-                    <li id="droitsauteurs">Droits d'auteurs</li>
-                    <li id="droitsauteurs_contenu">
-                        Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.
-                    </li>
-                    <li id="contacts">Contacts</li>
-                    <li id="contacts_contenu">
-                        adressemail@gmail.com
-                    </li>
-                    <li id="mentionslegales">Mentions légales</li>
-                    <li id="mentionslegales_contenu">
-                        Fonts : Messapia Bold,
-                        Messapia Regular, Luca Marsano, Colllectttivo.<br>
-                        Pilowlava Anton Moglia & Jérémy Landes, Velvetyne Type Foundry.<br>
-                        Web Design et développement : Pauline Duret & Lou Lefrançois.
-                    </li>
-                    <li><a href="soumettre_memoire.html"><span class="messapia_bold">Soumettre son mémoire</span></a></li>
+    </div>
 
-                </ul>
+    <ul id="menu">
 
-            </li>
+        <li id="apropos" style="height: 40%;"><span class="jaune">À PROPOS___</span></li>
+        <li id="apropos2" style="height: 40%;"><span class="jaune">À PROPOS___</span></li>
+        <li id="apropos_contenu">
+            <span class="jaune">
+                Ce site est une plateforme de diffusion des mémoires de DNSEP design graphique. Il a pour but de montrer l'étendue de la recherche dans ce domaine en France.
+            </span>
+        </li>
+        <li id="droitsauteurs"><span class="bleu">DROITS D'AUTEURS___</span></li>
+        <li id="droitsauteurs2"><span class="bleu">DROITS D'AUTEURS___</span></li>
+        <li id="droitsauteurs_contenu">
+            <span class="bleu">
+                Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.
+            </span>
+        </li>
+        <li id="ligneblanche"></li>
+        <li id="contacts"><span class="rose">CONTACTS___</span></li>
+        <li id="contacts2"><span class="rose">CONTACTS___</span></li>
+        <li id="contacts_contenu">
+            <span class="rose">
+                adressemail@gmail.com
+            </span>
+        </li>
+        <li id="mentionslegales"><span class="vert">MENTIONS LÉGALES___</span></li>
+        <li id="mentionslegales2"><span class="vert">MENTIONS LÉGALES___</span></li>
+        <li id="mentionslegales_contenu">
+            <span class="vert">
+                Fonts : Messapia Bold,
+                Messapia Regular, Luca Marsano, Colllectttivo.<br>
+                Pilowlava Anton Moglia & Jérémy Landes, Velvetyne Type Foundry.<br>
+                Web Design et développement : Pauline Duret & Lou Lefrançois.
+            </span>
+        </li>
+        <li><a href="soumettre_memoire.html"><span class="orange">SOUMETTRE SON MÉMOIRE___</span></a></li>
 
-        </ul>
+    </ul>
 
-    </header>
+    <div id="bouton_nuit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.73 32.73">
+            <path d="M16.37,0A16.37,16.37,0,1,0,32.73,16.37,16.37,16.37,0,0,0,16.37,0Zm0,29.7A13.34,13.34,0,1,1,29.7,16.37,13.33,13.33,0,0,1,16.37,29.7Z" />
+            <path class="cls-1" d="M16.37,3V29.7A13.34,13.34,0,0,0,16.37,3Z" />
+        </svg>
+    </div>
+
+    <div id="bouton_jour">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.73 32.73">
+            <path d="M16.37,32.73A16.37,16.37,0,1,0,0,16.37,16.35,16.35,0,0,0,16.37,32.73Zm0-29.7A13.34,13.34,0,1,1,3,16.37,13.33,13.33,0,0,1,16.37,3Z" />
+            <path class="cls-1" d="M16.37,29.7V3a13.34,13.34,0,1,0,0,26.67Z" />
+        </svg>
+
+    </div>
+
 
     <!-- //////////////////////////////////// -->
     <!-- ////////////// CONTENU ///////////// -->
@@ -178,14 +202,15 @@
 
         <div class="couv">
             <a href="memoire_15.html">
-                <img src="image/couv_15.jpg" alt="" />
-                <p class="titrememoire">Mémoire</p>
-                <p class="auteur">Lou Lefrançois,<br>isdaT, 2019</p>
+                <img src="image/guimier.jpg" alt="" />
+                <p class="titrememoire">L'imitation de vitesse</p>
+                <p class="auteur">Benoît Guimier,<br>isdaT, 2020</p>
                 <div class="auhover"></div>
             </a>
         </div>
 
     </div>
+
 
 </body>
 
@@ -194,43 +219,89 @@
 <!-- //////////////////////////////////// -->
 
 <script>
-    $("#apropos").mouseover(function() {
-        $("header ul ul#menu #apropos_contenu").css("display", "block");
+    $("#bouton_nuit").on('click', function() {
+        $("#bouton_nuit").css("display", "none");
+        $("#bouton_jour").css("display", "block");
+        $("body, #menu").css("background-color", "#212123");
+        $(".couv").css("background-color", "#424242");
     });
 
-    $("#apropos").mouseout(function() {
-        $("header ul ul#menu #apropos_contenu").css("display", "none");
+    $("#bouton_jour").on('click', function() {
+        $("#bouton_jour").css("display", "none");
+        $("#bouton_nuit").css("display", "block");
+        $("body, #menu").css("background-color", "#f6f6f6");
+        $(".couv").css("background-color", "#dadada");
     });
+
 </script>
 
 <script>
-    $("#droitsauteurs").mouseover(function() {
-        $("header ul ul#menu #droitsauteurs_contenu").css("display", "block");
+    $("#croix, #menu").hover(function() {
+        $("#menu").css("transform", "translateX(-164.5%)")
+    }, function() {
+        $("#menu").css("transform", "translateX(165%)")
     });
 
-    $("#droitsauteurs").mouseout(function() {
-        $("header ul ul#menu #droitsauteurs_contenu").css("display", "none");
-    });
 </script>
 
 <script>
-    $("#contacts").mouseover(function() {
-        $("header ul ul#menu #contacts_contenu").css("display", "block");
+    $("#apropos").on('click', function() {
+        $("#apropos_contenu").css("display", "block");
+        $("#apropos2").css("display", "block");
+        $("#apropos").css("display", "none");
     });
 
-    $("#contacts").mouseout(function() {
-        $("header ul ul#menu #contacts_contenu").css("display", "none");
+    $("#apropos2").on('click', function() {
+        $("#apropos_contenu").css("display", "none");
+        $("#apropos").css("display", "block");
+        $("#apropos2").css("display", "none");
     });
+
 </script>
 
 <script>
-    $("#mentionslegales").mouseover(function() {
-        $("header ul ul#menu #mentionslegales_contenu").css("display", "block");
+    $("#droitsauteurs").on('click', function() {
+        $("#droitsauteurs_contenu").css("display", "block");
+        $("#droitsauteurs2").css("display", "block");
+        $("#droitsauteurs").css("display", "none");
     });
 
-    $("#mentionslegales").mouseout(function() {
-        $("header ul ul#menu #mentionslegales_contenu").css("display", "none");
+    $("#droitsauteurs2").on('click', function() {
+        $("#droitsauteurs_contenu").css("display", "none");
+        $("#droitsauteurs").css("display", "block");
+        $("#droitsauteurs2").css("display", "none");
     });
+
+</script>
+
+<script>
+    $("#contacts").on('click', function() {
+        $("#contacts_contenu").css("display", "block");
+        $("#contacts2").css("display", "block");
+        $("#contacts").css("display", "none");
+    });
+
+    $("#contacts2").on('click', function() {
+        $("#contacts_contenu").css("display", "none");
+        $("#contacts").css("display", "block");
+        $("#contacts2").css("display", "none");
+    });
+
+</script>
+
+<script>
+    $("#mentionslegales").on('click', function() {
+        $("#mentionslegales_contenu").css("display", "block");
+        $("#mentionslegales2").css("display", "block");
+        $("#mentionslegales").css("display", "none");
+    });
+
+    $("#mentionslegales2").on('click', function() {
+        $("#mentionslegales_contenu").css("display", "none");
+        $("#mentionslegales").css("display", "block");
+        $("#mentionslegales2").css("display", "none");
+    });
+
 </script>
 
 <script>
@@ -240,6 +311,7 @@
 
     // Taille automatique du groupe
     $("#menu").css("height", ecranHeight);
+
 </script>
 <!-- SCRIPT MATH.RANDOM : -->
 
@@ -253,6 +325,8 @@
             $(el).appendTo($(el).parent());
         });
     });
+
 </script>
+
 
 </html>

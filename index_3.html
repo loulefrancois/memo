@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<meta charset="utf-8" />
+
+<head>
+
+    <!-- Ce qui est écris sur l'onglet : -->
+    <title>Memo! 2</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/icone.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styleindex_3.css" />
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+
+</head>
+
+
+<body>
+
+    <!-- //////////////////////////////////// -->
+    <!-- /////////////// MENU /////////////// -->
+    <!-- //////////////////////////////////// -->
+
+    <header>
+
+        <ul>
+            <li>
+                <h1 onclick="history.go(0)">Memo!</h1>
+            </li>
+
+            <li id="croix">
+                <span onclick="openNav()">
+                    <svg id="croixrotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.76 10.72">
+                        <path d="M6.68,6.4v4.32H4.08V6.4H0V4.26H4.08V0h2.6V4.26h4.08V6.4Z" />
+                    </svg>
+                </span>
+
+                <ul id="menu">
+
+                    <li id="apropos">À propos</li>
+                    <li id="apropos_contenu">
+                        Ce site est une plateforme de diffusion des mémoires de DNSEP design graphique. Il a pour but de montrer l'étendue de la recherche dans ce domaine en France.
+                    </li>
+                    <li id="droitsauteurs">Droits d'auteurs</li>
+                    <li id="droitsauteurs_contenu">
+                        Ces mémoires, rendu par les étudiants, sont le fruit de leur travail.
+                    </li>
+                    <li id="contacts">Contacts</li>
+                    <li id="contacts_contenu">
+                        adressemail@gmail.com
+                    </li>
+                    <li id="mentionslegales">Mentions légales</li>
+                    <li id="mentionslegales_contenu">
+                        Fonts : Messapia Bold,
+                        Messapia Regular, Luca Marsano, Colllectttivo.<br>
+                        Pilowlava Anton Moglia & Jérémy Landes, Velvetyne Type Foundry.<br>
+                        Web Design et développement : Pauline Duret & Lou Lefrançois.
+                    </li>
+                    <li><a href="soumettre_memoire.html"><span class="messapia_bold">Soumettre son mémoire</span></a></li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </header>
+
+    <!-- //////////////////////////////////// -->
+    <!-- ////////////// CONTENU ///////////// -->
+    <!-- //////////////////////////////////// -->
+
+    <div class="contenu">
+
+        <div class="couv">
+            <img src="image/couv_1.jpg" alt="" />
+            <p class="titrememoire">Le marketing des chats</p>
+            <p class="auteur">Elm Lucie, isdaT, 2020</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <a href="pdfmemoire.html">
+                <img src="image/couv_2.jpg" alt="" />
+                <p class="titrememoire">L'imitation de vitesse</p>
+                <p class="auteur"> GUIMIER Benoît<br>isdat, 2020 </p>
+                <div class="auhover"></div>
+            </a>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_3.jpg" alt="" />
+            <p class="titrememoire">Un chat Ultra</p>
+            <p class="auteur">isdaT, 2019</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_4.jpg" alt="" />
+            <p class="titrememoire">la légende</p>
+            <p class="auteur">en bas svp</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_5.jpg" alt="" />
+            <p class="titrememoire">la légende</p>
+            <p class="auteur">en bas svp</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_6.jpg" alt="" />
+            <p class="titrememoire">Un chat Ultra, Guillaume</p>
+            <p class="auteur">isdaT, 2019</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_7.jpg" alt="" />
+            <p class="titrememoire">la légende</p>
+            <p class="auteur">en bas svp</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_8.jpg" alt="" />
+            <p class="titrememoire">la légende</p>
+            <p class="auteur">en bas svp</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_9.jpg" alt="" />
+            <p class="titrememoire">Le marketing des chats, Elm Lucie</p>
+            <p class="auteur">isdaT, 2020</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_10.jpg" alt="" />
+            <p class="titrememoire">L'imitation de la vitesse d'un chat</p>
+            <p class="auteur">isdaT, 2020</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_11.jpg" alt="" />
+            <p class="titrememoire">Un chat Ultra, Guillaume</p>
+            <p class="auteur">isdaT, 2019</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_12.jpg" alt="" />
+            <p class="titrememoire">la légende</p>
+            <p class="auteur">en bas svp</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_13.jpg" alt="" />
+            <p class="titrememoire">la légende</p>
+            <p class="auteur">en bas svp</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <img src="image/couv_14.jpg" alt="" />
+            <p class="titrememoire">Un chat Ultra, Guillaume</p>
+            <p class="auteur">isdaT, 2019</p>
+            <div class="auhover"></div>
+        </div>
+
+        <div class="couv">
+            <a href="memoire_15.html">
+                <img src="image/couv_15.jpg" alt="" />
+                <p class="titrememoire">Mémoire</p>
+                <p class="auteur">Lou Lefrançois,<br>isdaT, 2019</p>
+                <div class="auhover"></div>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+<!-- //////////////////////////////////// -->
+<!-- ////////////// SCRIPT ////////////// -->
+<!-- //////////////////////////////////// -->
+
+<script>
+    $("#apropos").mouseover(function() {
+        $("header ul ul#menu #apropos_contenu").css("display", "block");
+    });
+
+    $("#apropos").mouseout(function() {
+        $("header ul ul#menu #apropos_contenu").css("display", "none");
+    });
+
+</script>
+
+<script>
+    $("#droitsauteurs").mouseover(function() {
+        $("header ul ul#menu #droitsauteurs_contenu").css("display", "block");
+    });
+
+    $("#droitsauteurs").mouseout(function() {
+        $("header ul ul#menu #droitsauteurs_contenu").css("display", "none");
+    });
+
+</script>
+
+<script>
+    $("#contacts").mouseover(function() {
+        $("header ul ul#menu #contacts_contenu").css("display", "block");
+    });
+
+    $("#contacts").mouseout(function() {
+        $("header ul ul#menu #contacts_contenu").css("display", "none");
+    });
+
+</script>
+
+<script>
+    $("#mentionslegales").mouseover(function() {
+        $("header ul ul#menu #mentionslegales_contenu").css("display", "block");
+    });
+
+    $("#mentionslegales").mouseout(function() {
+        $("header ul ul#menu #mentionslegales_contenu").css("display", "none");
+    });
+
+</script>
+
+<script>
+    // Taille height et width de l'écran
+    var ecranHeight = $(window).height();
+    var ecranWidth = $(window).width();
+
+    // Taille automatique du groupe
+    $("#menu").css("height", ecranHeight);
+
+</script>
+<!-- SCRIPT MATH.RANDOM : -->
+
+<script>
+    $(document).ready(function() {
+        var collection = $("div.contenu div.couv").get();
+        collection.sort(function() {
+            return Math.random() * 10 > 5 ? 1 : -1;
+        });
+        $.each(collection, function(i, el) {
+            $(el).appendTo($(el).parent());
+        });
+    });
+
+</script>
+
+
+</html>
